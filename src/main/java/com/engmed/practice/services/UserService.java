@@ -32,4 +32,8 @@ public class UserService {
 		return repository.save(obj);
 	}
 
+	//Operação para deletar no bd
+	public void delete(Long id) {
+		repository.deleteById(id);
+	}
 }
